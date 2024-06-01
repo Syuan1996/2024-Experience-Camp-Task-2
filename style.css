@@ -1,0 +1,503 @@
+*,*::after,*::before{
+    box-sizing:border-box;
+  
+}
+
+body{
+    margin-top: 96px;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+
+    }
+    
+
+h1 a{
+   
+    display: block;
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg');
+
+    background-repeat: no-repeat;
+ width: 90px;
+ height: 40px;
+
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+  
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  height: 96px;
+    padding: 28px 0px;
+        border-bottom: 1px solid #F1F1F1;   
+        background-color: #ffffff;
+        opacity: 0.8;
+    }
+    
+.headergroup{
+
+    display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+
+.navbar{
+    display: flex;
+    gap: 10px;
+  margin: 0 auto;
+
+  
+}
+
+.navbar li a{
+    display: block;
+   padding: 4px  8px;
+   transition: all 0.3s;
+}
+
+.navbar a:hover{
+    font-weight: 600;
+    font-size: 18px;
+   
+}
+
+.nohambtn{
+display: none ;
+}
+
+
+
+@media(max-width:767px){
+    body{
+        margin-top: 56px;
+    }
+header{
+
+height: 56px;
+padding:11.5px 10px ;
+}
+
+.navbar{
+
+display: none;
+flex-direction: column;
+position: absolute;
+top:56px;
+left:0px;
+right: 0px;
+width: 95%;
+background-color: rgb(255, 255, 255);
+z-index: 2;
+
+
+}
+.navbar li{
+
+  width: 100%;
+    text-align:center;
+    font-size: 20px;
+    line-height: 30px;
+
+padding-top: 14px;
+transition: all 0.3s;
+
+}
+
+.navbar li a:hover{
+    font-size: 22px;
+}
+
+
+.nohambtn{
+
+
+ display: block;
+}
+
+.nohambtn .close{
+ display: none;
+}
+
+}
+
+/* 以下為banner區塊 */
+
+.banner {
+    max-width: 100%;
+    background-color: #FAFAFA;
+padding-top: 139px;
+padding-bottom: 80px;
+margin-bottom: 120px;
+} 
+
+
+.Slogan{
+    max-width: 670px;
+    max-height: 192px;
+    margin: 0 auto;
+text-align: center;
+/* background-color: aqua; */
+margin-bottom: 73px;
+position: relative;
+
+
+}
+
+.Slogan h3{
+    font-size: 24px;
+    position: relative;
+    font-weight: 400;
+ 
+}
+
+
+.Slogan h3:first-child::after{
+content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
+position: absolute;
+top:-64px;
+left: 0px;
+
+}
+
+.Slogan h3:last-child::after{
+    content: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/quote-right.png);
+    position: absolute;
+    bottom:-64px;
+    right: 0px;
+    
+    }
+
+    
+.slogan1{
+    position: relative;
+    z-index: 1;
+}
+.slogan1::before{
+    content:'';
+    background: url(https://hex2024.worksbyaaron.com/image/deco/mark.webp);
+
+    background-repeat: no-repeat;
+background-size: cover;
+ width: 148px;
+ height: 6px;
+position: absolute;
+left: -12px;
+bottom: 1px;
+z-index: -1;
+}
+
+.slogan2{
+  
+    line-height: 28.8px;
+    padding-bottom: 59px;
+    position: relative;
+    z-index: 1;
+}
+
+.slogan2::before{
+    content:'';
+    background: url(https://hex2024.worksbyaaron.com/image/deco/mark.webp);
+    background-repeat: no-repeat;
+background-size: cover;
+ width: 148px;
+ height: 6px;
+    position: absolute;
+    left: -9px;
+    top: 18px;
+   z-index: -1;
+}
+
+
+.SloganDetail h4{
+
+    margin-bottom: 12px;
+
+}
+.SloganDetail h4::after{
+content: "";
+border-bottom:2px solid #C1C1C1 ;
+width: 24px;
+display: block;
+margin: 0 auto;
+padding-top: 4px;
+}
+
+
+
+.SloganDetail{
+    max-width: 636px;
+    max-height: 84px;
+margin: 0 auto;
+text-align: center;
+display: flex;
+gap: 40px;
+}
+
+@media(max-width:767px){
+
+    .banner{
+        padding: 96px 37.5px 80px 37.5px;
+       height: 540px;
+    
+    }
+.Slogan h3{
+    font-size: 20px;
+    /* white-space:nowrap; */
+ 
+}
+.Slogan h3:first-child{
+    margin-bottom: 8px;
+}
+
+.Slogan h3:first-child::after{
+    right: 0px;
+    left: 0px;
+   
+}
+
+.Slogan h3:last-child::after{
+
+display: none;
+}
+
+    .SloganDetail{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       font-size: 16px;
+            width: 235px;
+          padding-top: 40px;
+        
+       
+    }
+
+    .Mobilebannerword2::before{
+        content: '\A';
+        white-space: pre;
+            }
+
+            .slogan1::before{
+                content:'';
+                background: url(https://hex2024.worksbyaaron.com/image/deco/mark.webp);
+                background-repeat: no-repeat;
+           background-size: contain;
+             width: 108px;
+             height: 6px;
+             left: -1px;
+               
+            }
+
+
+            .slogan2::before{
+                content:'';
+                background: url(https://hex2024.worksbyaaron.com/image/deco/mark.webp);
+                background-repeat: no-repeat;
+           background-size: contain;
+             width: 108px;
+             height: 6px;
+             top: 15px;
+             left: 0px;
+               
+            }
+}
+
+
+/* 以下是main區塊 */
+
+.cardInfo{
+ 
+    display: flex;
+ justify-content: space-between;
+ gap: 24px;
+    flex-wrap: wrap;
+
+}
+
+.cardInfoli{
+    max-width: 636px;
+    margin-bottom: 80px;
+}
+
+.cardPic{
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.cardPic img{
+    transition: all 0.5s;
+}
+
+.cardPic img:hover{
+scale: 1.1;
+}
+
+.cardDetail{
+    padding: 16px 0px 0px 16px ;
+}
+
+.cardDetail h4{
+    font-size: 28px;
+    line-height: 33.6px;
+    margin-bottom: 8px;
+   
+}
+
+.cardDetail p{
+    margin-bottom: 24px;
+}
+
+.cardDetail ul{
+    display: flex;
+    gap: 16px;
+}
+
+
+.cardDetail a{
+  color: #3B3B3B;
+padding: 4px 12px 4px  12px;
+background-color:#F1F1F1;
+border-radius: 16px;
+}
+
+@media (max-width:767px){
+    
+        .cardInfoli{
+            width: 100%;
+            margin: 0 30px;
+            margin-bottom: 48px;
+        }
+        .cardPic img{
+            width: 100%;
+        } 
+
+        .cardDetail ul{
+           
+            gap: 8px;
+        }
+
+    
+}
+
+/* 頁碼 */
+
+.pagenumgroup{
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 120px;
+}
+
+.pagenum{
+    padding: 2px 13px;
+    cursor:pointer;
+    font-size: 24px;
+border-radius: 4px;
+transition: pagenum .5s;
+
+}
+
+.pagenum:hover{
+background-color: #1E1E1E;
+color: #fff;
+}
+
+/* 頁腳 */
+
+footer{
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.footerbox{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 80px 0px;
+}
+
+.footerbox p,span{
+font-size: 20px;
+}
+
+.footerbox h2{
+margin-bottom: 24px;
+}
+
+.footerleft p{
+line-height: 30px;
+}
+
+.footerleft span a{
+color: #919191;
+}
+
+
+
+
+
+
+.footerright a {
+    width: 306px;
+      background: #ffffff;
+      padding: 8px 24px;
+      border-radius: 8px;
+      border: 1px solid #c1c1c1;
+      margin-bottom: 24px;
+    display:block;
+      font-size: 20px;
+      font-weight: 400;
+      color: #3b3b3b;
+  }
+
+  .footerright img{
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+
+  .footerright .footerright-b{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  @media(max-width: 767px) {
+
+    .footer{
+        background-image:url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+      }
+
+    .footerbox{
+flex-direction: column;
+
+    }
+
+
+    .footerleft{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+  }
