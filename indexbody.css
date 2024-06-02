@@ -1,0 +1,72 @@
+.bannerpro{
+  
+    height: 626px;
+
+}
+.bannerword h1{
+font-size: 40px; 
+font-weight: 600;
+line-height: 48px;
+color:#3B3B3B;
+margin-bottom: 24px;
+
+}
+
+.bannerword p{
+    font-size: 20px;
+    font-weight: 400;
+    color:#5B5B5B;
+    line-height: 30px;
+padding-bottom: 8px;
+}
+
+.bannerword .english{
+    font-size: 16px;
+    color: #C1C1C1;
+}
+
+.bannerword ul{
+    display: flex;
+   padding-top: 60px;
+    gap: 16px;
+
+}
+
+.banner-sm{
+    display: none;
+}
+
+
+
+
+.banner-lg{
+    position: absolute;
+    top: 96px;
+    right: 0px;
+width: 60%;
+}
+
+@media(max-width:767px){
+
+    .banner-lg{
+        display: none;
+    }
+
+    .banner-sm{
+        display: block;
+        width: 100%;
+    }
+
+    .bannerprobox{
+        display: flex;
+        flex-direction: column-reverse;
+ 
+    }
+
+ 
+}
+
+
+
+
+
