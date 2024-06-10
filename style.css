@@ -5,6 +5,7 @@
 
 body{
     margin-top: 96px;
+    font-family:"Noto Sans TC", sans-serif;
 }
 a{
     text-decoration: none;
@@ -16,6 +17,8 @@ a{
     margin: 0 auto;
 
     }
+
+
     
 
 h1 a{
@@ -36,6 +39,7 @@ h1 a{
 img{
     max-width: 100%;
     height: auto;
+    display: block;
   
 }
 
@@ -284,7 +288,7 @@ display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       font-size: 16px;
+  
             width: 235px;
           padding-top: 40px;
         
@@ -461,6 +465,7 @@ color: #919191;
 
 
 .footerright a {
+display: flex;
     width: 306px;
       background: #ffffff;
       padding: 8px 24px;
@@ -473,10 +478,22 @@ color: #919191;
       color: #3b3b3b;
   }
 
-  .footerright img{
+  /* .footerright ul li a{
+    display: flex;
+    align-items: center;
+  } */
+
+  /* .footerright img{
+    display: inline-block;
     vertical-align: middle;
-    margin-right: 12px;
+   margin-right: 12px;
+  } */
+
+    .footerright img{
+ 
+   margin-right: 12px;
   }
+
 
   .footerright .footerright-b{
     background-color: #000000;
@@ -500,4 +517,8 @@ flex-direction: column;
         text-align: center;
     }
 
+  }
+
+  .material-symbols-outlined{
+    font-size:40px !important ;
   }

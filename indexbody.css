@@ -1,7 +1,11 @@
 .bannerpro{
-  
+  background-color: #fff8f8;
     height: 626px;
 
+}
+
+.bannerword{
+    width: 430px;
 }
 .bannerword h1{
 font-size: 40px; 
@@ -14,7 +18,7 @@ margin-bottom: 24px;
 
 .bannerword p{
     font-size: 20px;
-    font-weight: 400;
+
     color:#5B5B5B;
     line-height: 30px;
 padding-bottom: 8px;
@@ -40,10 +44,17 @@ padding-bottom: 8px;
 
 
 .banner-lg{
-    position: absolute;
-    top: 96px;
-    right: 0px;
+
+
 width: 60%;
+}
+
+.bannerprobox{
+    display: flex;
+align-items: center;
+justify-content: flex-end;
+/* gap: 24px; */
+
 }
 
 @media(max-width:767px){
@@ -55,12 +66,14 @@ width: 60%;
     .banner-sm{
         display: block;
         width: 100%;
+     
     }
 
     .bannerprobox{
         display: flex;
         flex-direction: column-reverse;
- 
+     position: relative;
+  
     }
 
  
