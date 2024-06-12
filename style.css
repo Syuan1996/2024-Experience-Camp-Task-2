@@ -44,6 +44,7 @@ img{
 }
 
 header{
+    
   position: fixed;
   top: 0;
   left: 0;
@@ -58,9 +59,10 @@ header{
     
 .headergroup{
 
+    max-width:1608px;
+    margin-left:auto;
     display: flex;
-align-items: center;
-justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -472,10 +474,10 @@ display: flex;
       border-radius: 8px;
       border: 1px solid #c1c1c1;
       margin-bottom: 24px;
-    display:block;
       font-size: 20px;
       font-weight: 400;
       color: #3b3b3b;
+      align-items: center;
   }
 
   /* .footerright ul li a{
@@ -519,6 +521,9 @@ flex-direction: column;
 
   }
 
-  .material-symbols-outlined{
-    font-size:40px !important ;
+ 
+
+  .material-symbols-outlined.openmenu,.material-symbols-outlined.closemenu{
+     font-size:40px
   }
+
